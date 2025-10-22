@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form태그</title>
+</head>
+
+<body>
+    <form name="user" action="/submit_page" method="post">
+        <div>
+            <label for="username">이름을 입력하세요 :</label>
+            <input type="text" placeholder="홍길동" required id="username">
+            <!-- autofocus는 페이지가 열리자마자 해당부분에 자동으로 포커스가 가도록 설정하는것 -->
+            <!-- placeholder는 입력란에 미리 보여지는 안내 문구를 설정하는것 -->
+            <!-- required는 반드시 입력해야하는곳에 설정하는것 -->
+        </div>
+        <div>
+            강아지 
+            <input type="checkbox">
+            
+            고양이
+            <input type="checkbox">
+            
+            다람쥐
+            <input type="checkbox" checked>
+            <!-- checked는 브라우저 열자마자 자동으로 체크가 되어있도록 설정하는것
+             해제하려면 checked를 지우면됨 -->
+        </div>
+        <div>
+            password : <input type="password" minlength="8">
+            <!-- minlength는 최소 ~몇글자이상 작성하라는 알림창메세지가 뜨는것 -->
+        </div>
+        <div>
+            number : <input type="number" max="150">
+            <!-- max는 150을 초과할 수 없도록 설정하는것 -->
+        </div>
+        <div>
+            email : <input type="email">
+        </div>
+        <div>
+            submit : <input type="submit">
+        </div>
+        <div>
+            tel : <input type="tel" disabled>
+            <!-- disabled는 해당 input태그를 비활성화 시키는 속성 -->
+        </div>
+        <div>
+            여
+            <input type="radio" name="gender" value="female">
+            <!-- name=gender 를 작성안하면 중복선택됨 -->
+            남
+            <input type="radio" name="gender" value="male">
+        </div>
+        <div>
+            date : <input type="date">
+        </div>
+        <div>
+            button : <input type="button"   value="버튼을 클릭하세요">
+            <!-- type="button"은 버튼 클릭시 아무런 동작을 하지 않도록 설정하는것
+             폼 제출용은 인풋타입 버튼을 사용한다. -->
+        </div>
+        <div>
+            <textarea name="개선의견" cols="50" rows="5" placeholder="여러분들의 소중한 의견을 입력해주세요."></textarea>
+            <!-- 50은 텍스트 영역의 너비를 50칸으로 설정하는것 -->
+        </div>
+
+        <div>
+            <button type="reset">초기화</button>
+        </div>
+
+    </form>
+    <!-- div는 블록태그이기 때문에 한 줄을 다 차지함
+     input은 인라인태그이기 때문에 콘텐츠만큼의 자리를 차지함. -->
+
+
+</body>
+
+</html>
