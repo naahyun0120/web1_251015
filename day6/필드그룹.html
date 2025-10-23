@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>필드그룹</title>
+</head>
+<body>
+    <form action="">
+    <fieldset disabled>
+        <!-- disabled 속성이 있는 fieldset은 내부의 form 요소를 비활성화 시킨다. -->
+        <legend>회원정보1</legend>
+        <!-- legend는 머릿글을 달아주는 태그 -->
+        <label for="name">이름:</label>
+        <input type="text" id="name">
+        <br>
+        <label for="tel">전화번호: </label>
+        <input type="tel" id="tel">
+    </fieldset>
+    <fieldset>
+        <legend>회원정보2</legend>
+        <!-- legend는 머릿글을 달아주는 태그 -->
+        <label for="zip">우편번호: </label>
+        <input type="text" id="zip">
+        <br>
+        <label for="address">주소: </label>
+        <input type="text" id="address">
+    </fieldset>
+</form>
+</body>
+
+</html>
