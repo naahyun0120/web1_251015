@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>365mc 스타일 버튼</title>
+  
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: "Noto Sans KR", sans-serif;
+      text-align: center;
+    }
+
+    .cta-section {
+      padding: 120px 20px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      font-weight: 500;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .headline {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.5;
+      margin-bottom: 50px;
+    }
+
+    .view-more {
+      display: inline-block;
+      padding: 14px 38px;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.35s ease;
+    }
+
+    .view-more::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: opacity 0.35s ease;
+    }
+
+    .view-more:hover {
+      border-color: #fff;
+      color: #000;
+      background-color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .view-more:hover::before {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="cta-section">
+    <p class="subtitle">특별한 지방줄기세포</p>
+    <h1 class="headline">
+      지방, 365mc를 만나<br />
+      1억원의 가치가 됩니다.
+    </h1>
+    <a href="#" class="view-more">VIEW MORE</a>
+  </div>
+</body>
+</html>
+
