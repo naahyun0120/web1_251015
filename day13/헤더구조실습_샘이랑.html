@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>헤더구조실습</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #1904d6;
+            padding: 0 50px;
+        }
+
+        .menu,
+        .sign_zone {
+            display: flex;
+        }
+
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu > li > a,
+        .sign_zone > div > a {
+            padding: 16px;
+            text-decoration: none;
+            color: #fff;
+        }
+        /* margin을 쓰면 menu안에 있는 about, skil 등등 선택해야하는것들에 가깝고 정확히 커서를 가져가야만 손모양 커서(클릭하는 커서)로 변형되고 padding을 쓰면 근접해있어도 손모양 커서로 변환됨. 그 이유는 접근성이 좋아진것임.
+        결론= 이런식으로 사용할 땐 margin보단 padding을 사용하면 됨. */
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">
+            LOGO
+        </h1>
+
+        <ul class="menu">
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Skill</a>
+            </li>
+            <li>
+                <a href="#">Portpolio</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+
+        <div class="sign_zone">
+            <div>
+                <a href="#">LOGIN</a>
+            </div>
+            <div>
+                <a href="#">SIGN UP</a>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
