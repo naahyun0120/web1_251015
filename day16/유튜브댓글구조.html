@@ -1,13 +1,128 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>유튜브 댓글 구조</title>
+    <script src="https://kit.fontawesome.com/ffaa8b681b.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .comment_contaainer {
+            display: flex;
+            width: 1200px;
+            justify-content: space-between;
+            margin: 50px auto;
+        }
+
+        figure > img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .basis {
+            flex-basis: 90%;
+        }
+
+        h2,
+        .comment_content {
+            font-size: 14px;
+        }
+
+        .icon_box,
+        .rcomment_box {
+            display: flex;
+            align-items: center;
+            margin: 16px 0;
+            gap: 16px;
+        }
+
+        .icon_box > figure,
+        .icon_box > figure > img {
+            width: 24px;
+            height: 24px;
+        }
+
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .rcomment_box,
+        .rcomment_box > button {
+            color: blue;
+        }
+
+        .icon_box > p,
+        .recomment_box > p {
+            font-size: 14px;
+            padding: 8px 10px;
+            border-radius: 20px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .icon_box > p:hover,
+        .recomment_box > p:hover {
+            background: rgb(157, 157, 157);
+            color: #fff;
+        }
+    </style>
 </head>
+
 <body>
-    <article>
-        <div></div>
+    <article class="comment_contaainer">
+        <figure>
+            <img src="./유튜브이미지.png" alt="프로필">
+        </figure>
+
+        <div class="basis">
+            <h2>@nanamusic</h2>
+            <p class="comment_content">
+                이 플레이리스트는 정말 멋져 보여요! 재즈는 제 기분을 행복하게 편안하게 만들어주는거같아요! 특히 지금 계절의 분위기와 너무 잘어울리는 플레이리스트를 준비해주셔서 정말 감사합니다! 🩵💐😍
+            </p>
+            <div class="icon_box"> 
+                <!-- 좋아요 박스 -->
+                <div>
+                    <button>
+                        <!-- 폰트어썸 좋아요 아이콘 넣을거임 -->
+                        <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                    </button>
+                    <span>88</span>
+                </div>
+                <!-- 싫어요 박스 -->
+                <div>
+                    <button>
+                        <!-- 폰트어썸 싫어요 아이콘 넣을거임 -->
+                        <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="rcomment_box">
+                <button>
+                    <!-- 아래꺽쇄아이콘 들어갈 자리 -->
+                    <i class="fa-solid fa-chevron-down fa-xl"></i>
+                </button>
+                <p>답글 1개</p>
+            </div>
+                <figure>
+                    <img src="./유튜브이미지.png" alt="프로필 이미지">
+                </figure>
+            <p>답글</p>
+        </div>
+
+        <div>
+            <button>
+                <!-- 엘립스 버티컬 아이콘 들어갈 자리임 -->
+                <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+            </button>
+        </div>
     </article>
 </body>
+
 </html>
